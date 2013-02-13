@@ -1,0 +1,35 @@
+http://api.linkedin.com/v1/people/~/connections:(id,first-name,last-name,formatted-name,headline,industry,location,num-connections,summary,specialties,positions,site-standard-profile-request,public-profile-url,api-standard-profile-request,proposal-comments,associations,honors,interests,publications,patents,languages,skills:(id,skill,proficiency,years),certifications,educations,courses,volunteer,three-current-positions,num-recommenders,following,job-bookmarks,date-of-birth,member-url-resources,connections)
+
+id
+first-name
+last-name
+formatted-name
+headline
+industry
+num-connections
+summary
+specialties
+positions
+site-standard-profile-request
+public-profile-url
+proposal-comments
+associations
+honors
+interests
+publications (publications: (id,title,publisher,authors,date,url))
+patents (patents:(id,title, summary,number,status,office,inventors,data,url))
+languages (languages:(id,language,proficiency))
+skills (skills:(id,skill,proficiency,years))
+certifications (certifications:(id,name,authority,number,start-date,end-date))
+educations (educations:(id,school-name,field-of-study,start-date,end-date,degree,activities,notes))
+courses (courses:(id,name,number))
+volunteer (volunteer:(id,role,organization,cause))
+three-current-positions
+num-recommenders
+recommendations-received (recommendations:(id,recommendation-type,recommendation-text,recommender))
+following
+job-bookmarks
+date-of-birth
+member-url-resources
+connections
+
