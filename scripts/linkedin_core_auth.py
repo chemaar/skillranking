@@ -8,7 +8,7 @@ from xml.etree import ElementTree as ET
 consumer_key    =   'nfm8uw34piu1'
 consumer_secret =   'VQ8qfOcMdyUMNwvK'
 
-request_token_url = 'https://api.linkedin.com/uas/oauth/requestToken?scope=r_basicprofile+r_fullprofile+r_network+rw_groups'
+request_token_url = 'https://api.linkedin.com/uas/oauth/requestToken?scope=r_basicprofile+r_fullprofile+r_network+rw_groups+r_emailaddress'
 access_token_url =  'https://api.linkedin.com/uas/oauth/accessToken'
 authorize_url =     'https://api.linkedin.com/uas/oauth/authorize'
 

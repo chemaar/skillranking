@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
 
 	print "\n********Get the profile in JSON using query parameter********"
-	api_url="http://api.linkedin.com/v1/people/~/connections:(id,skills,first-name,headline,specialties,positions,public-profile-url)?format=xml&count=1"
+	api_url="http://api.linkedin.com/v1/people/~/connections:(id,first-name,last-name,formatted-name,email-address,headline,industry,location,num-connections,summary,specialties,positions,site-standard-profile-request,public-profile-url,api-standard-profile-request,proposal-comments,associations,honors,interests,publications,patents,languages,skills:(id,skill,proficiency,years),certifications,educations,courses,volunteer,three-current-positions,num-recommenders,following,job-bookmarks,date-of-birth,member-url-resources,connections)?format=xml&count=1"
 	response = make_request(client,api_url)
 	print response
 	#connections_data = simplejson.loads(response)
