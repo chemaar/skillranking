@@ -1,0 +1,30 @@
+beans:
+  - id: skillRankingAppServ
+    clazz: es.uc3m.smart.appserv.skillRankingAppServ
+    properties:
+     docDao: ref docDao
+     userDAO: ref userDAO
+     docTagDao: ref docTagDao
+     userTagDao: ref userTagDao
+      
+  - id: docDao
+    clazz: es.uc3m.smart.dao.impl.DocumentDAOImpl
+
+  - id: userDAO
+    clazz: es.uc3m.smart.dao.impl.UserDAOImpl
+
+  - id: docTagDao
+    clazz: es.uc3m.smart.dao.impl.DocumentTagValueDAOImpl
+    
+  - id: userTagDao
+    clazz: es.uc3m.smart.dao.impl.UserTagValueDAOImpl
+    
+
+spring:
+  - http.multipart.max-file-size: 1Mb
+  - http.multipart.max-request-size: 10Mb
+  - http.multipart.max-post-size: 10Mb
+
+
+
+
